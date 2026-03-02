@@ -13,6 +13,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/aventureiros")
+@CrossOrigin(origins = "http://localhost:5173") // Porta padrão do Vite
+@RestController
+@RequestMapping("/aventureiros")
 public class AventureiroController {
 
     private final GuildaRepository repository;
